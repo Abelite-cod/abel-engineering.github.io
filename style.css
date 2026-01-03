@@ -87,6 +87,12 @@ a{text-decoration:none;color:inherit}
 }
 
 /* SECTIONS */
+.section.portfolio{
+  background:url("assets/portfoliobg.png") center/cover no-repeat;
+  position:relative;
+  padding:180px 0;
+}
+
 .section{padding:120px 0}
 .section.dark{background:var(--bg)}
 
