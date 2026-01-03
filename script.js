@@ -22,28 +22,34 @@ const projects = [
   {
     title: "AI Vision Dashboard",
     desc: "Real-time object detection dashboard using YOLOv8.",
-    img: "assets/project-ai-dashboard.png"
+    img: "assets/project-ai-dashboard.png",
+    link: "projects/ai-vision-dashboard.html"
   },
   {
     title: "Brain Tumor Detection",
     desc: "YOLOv8-based MRI brain tumor detection system.",
-    img: "assets/project-brain-tumor.png"
+    img: "assets/project-brain.png",
+    link: "projects/brain-tumor-detection.html"
   },
   {
     title: "Gym Rep Counter",
     desc: "Computer vision-powered exercise rep counter.",
-    img: "assets/project-gym-counter.png"
+    img: "assets/project-gym.png",
+    link: "projects/gym-rep-counter.html"
   }
 ];
 
 const container = document.getElementById("projects");
+
 projects.forEach(p => {
-  const card = document.createElement("div");
-  card.className = "card";
+  const card = document.createElement("a");
+  card.href = p.link;
+  card.className = "card project-card";
   card.innerHTML = `
-    <img src="${p.img}" alt="${p.title}" style="width:100%;border-radius:8px;margin-bottom:12px">
+    <img src="${p.img}" alt="${p.title}">
     <h4>${p.title}</h4>
     <p>${p.desc}</p>
+    <span class="project-link">View project →</span>
   `;
   container.appendChild(card);
 });
