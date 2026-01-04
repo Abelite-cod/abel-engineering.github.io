@@ -209,12 +209,9 @@ a{text-decoration:none;color:inherit}
 /* MOBILE */
 @media(max-width:900px){
   .about{flex-direction:column;text-align:center}
-  .hero{
-    background-position:top center; /* keeps important part visible */
-    padding:120px 0; /* reduce vertical padding */
-  }
+  
   .section.portfolio{
-    background-position:top center;
+    background-position:center;
     padding:120px 0;
   }
   .hero h1{font-size:42px}
