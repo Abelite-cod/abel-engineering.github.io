@@ -57,7 +57,7 @@ a{text-decoration:none;color:inherit}
 /* HERO */
 .hero{
   background:url("assets/bg1.png") no-repeat center center;
-  backgroud-size:cover;
+  background-size:cover;
   position:relative;
   padding:180px 0;
 }
